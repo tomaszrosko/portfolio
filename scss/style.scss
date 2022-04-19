@@ -18,21 +18,21 @@ $black-color: #000000;
 
 // SVG
 .ic-mail {
-  content: url("../img/svg/mail.svg");
+  content: url("../images/svg/mail.svg");
   padding-right: 1rem;
 }
 
 // Radius
-$section-radius: 10px;
-$picture-radius: 15px;
+$section-radius: 15px;
+$picture-radius: 20px;
 
 .ic-phone {
-  content: url("../img/svg/phone.svg");
+  content: url("../images/svg/phone.svg");
   padding-right: 1rem;
 }
 
 .ic-house {
-  content: url("../img/svg/house.svg");
+  content: url("../images/svg/house.svg");
   padding-right: 1rem;
 }
 
@@ -83,6 +83,21 @@ body {
       content: '✔';
       padding: 0 0.4rem;
       color: $silver-color;
+    }
+  }
+}
+.section-slider {
+  background-color: $blue-color;
+  border-radius: $section-radius;
+
+  h3 {
+      font-weight: 700;
+      font-size: 2.6rem;
+
+  }
+  .carousel-item {
+    img {
+      border-radius: $section-radius;
     }
   }
 }
@@ -153,10 +168,25 @@ body {
     }
   }
 }
+@include media-breakpoint-only(md) {
+  .section-header {
+    span {
+      font-size: 1.8vw;
+    }
+  }
+  .section-education-skills {
+    padding-left: 0;
+    .col-12.col-sm-12.col-md-4 {
+      padding-left: 0;
+    }
+  }
+}
 
 
 @include media-breakpoint-down(md) {
+.section-education-skills {
 
+}
   .section-footer {
     padding: 1rem 0;
 

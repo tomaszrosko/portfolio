@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Tomasz Rośko</title>
     <link rel="stylesheet" href="scss/style.css" type="text/css"/>
+    <link rel="stylesheet" href="scss/lightbox.min.css" type="text/css"/>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 <div class="container">
@@ -13,8 +16,8 @@
         <div class="row mx-0">
             <div class="col-12 col-sm-12 col-md-4 p-5">
                 <div class="card">
-                    <a href="img/tomasz.rosko.jpg" class="photo-portfolio" title="Tomasz Rośko"><img
-                            src="img/min/tomasz.rosko.jpg" class="card-img-top" alt="Tomasz Rośko">
+                    <a href="images/tomasz.rosko.jpg" class="photo-portfolio" title="Tomasz Rośko"><img
+                            src="images/min/tomasz.rosko.jpg" class="card-img-top" alt="Tomasz Rośko">
                     </a>
                     <div class="card-body">
                         <div class="card-title text-center">
@@ -52,8 +55,7 @@
                 <ul>
                     <li>Linux</li>
                     <li>Windows</li>
-                    <li>WebStorm</li>
-                    <li>PhpStorm</li>
+                    <li>IntelliJ IDEA</li>
                     <li>Adobe XD</li>
                     <li>Figma</li>
                 </ul>
@@ -62,8 +64,8 @@
                 <h4>Umiejętności:</h4>
                 <ul>
                     <li>HTML</li>
-                    <li>SASS</li>
-                    <li>SCSS</li>
+                    <li>CSS3</li>
+                    <li>SASS / SCSS</li>
                     <li>Bootstrap</li>
                     <li>Webpack</li>
                     <li>JavaScript</li>
@@ -80,82 +82,153 @@
             </div>
         </div>
     </div>
+    <div class="section-slider">
+        <div class="row d-flex justify-content-center">
+            <div class="col-12 pt-5 text-center">
+                <h3>Realizacje</h3>
+            </div>
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-6">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/oczyszczacz-vestfrost.jpg" class="d-block w-100" alt="Oczyszczacz Vestfrost">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/oczyszczacz-vestfrost2.jpg" class="d-block w-100" alt="Oczyszczacz Vestfrost">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/oczyszczacz.jpg" class="d-block w-100" alt="Oczyszczacz Sharp">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/oczyszczacz-sharp.jpg" class="d-block w-100" alt="Oczyszczacz Sharp">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/sharp-effectiveness.jpg" class="d-block w-100" alt="Oczyszczacz Sharp">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/klimatyzatory.jpg" class="d-block w-100" alt="Klimatyzacja">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/oferta-klimatyzacja.jpg" class="d-block w-100" alt="Klimatyzacja">
+                                <div class="carousel-caption d-none d-md-block">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="section-hobby">
-        <div class="row mx-0 mx-md-5 pt-5 pb-5 text-center">
-            <div class="col-12 text-center pb-3">
+        <div class="row mx-0 mx-md-5 py-5 text-center gallery">
+            <div class="col-12 text-center pb-5">
                 <h3>Prywatnie</h3>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Alicante.jpg" alt="Alicante">
-                    <a href="img/Alicante.jpg" class="img-fluid photo-portfolio" title="Alicante"></a>
+                    <img src="images/min/Alicante.jpg" alt="Alicante">
+                    <a href="images/Alicante.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Alicante"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Babia-Gora-spring.jpg" alt="Babia Gora spring">
-                    <a href="img/Babia-Gora-spring.jpg" class="img-fluid photo-portfolio" title="Babia Gora spring"></a>
+                    <img src="images/min/Babia-Gora-spring.jpg" alt="Babia Gora spring">
+                    <a href="images/Babia-Gora-spring.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Babia Gora spring"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Babia-Gora-sunset.jpg" alt="Babia Gora sunset">
-                    <a href="img/Babia-Gora-sunset.jpg" class="img-fluid photo-portfolio" title="Babia Gora sunset"></a>
+                    <img src="images/min/Babia-Gora-sunset.jpg" alt="Babia Gora sunset">
+                    <a href="images/Babia-Gora-sunset.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Babia Gora sunset"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Boronice-village.jpg" alt="Boronice village">
-                    <a href="img/Boronice-village.jpg" class="img-fluid photo-portfolio" title="Boronice village"></a>
+                    <img src="images/min/Boronice-village.jpg" alt="Boronice village">
+                    <a href="images/Boronice-village.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Boronice village"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Cartagena.jpg" alt="Cartagena">
-                    <a href="img/Cartagena.jpg" class="img-fluid photo-portfolio" title="Cartagena"></a>
+                    <img src="images/min/Cartagena.jpg" alt="Cartagena">
+                    <a href="images/Cartagena.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Cartagena"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Green-Velo-Roztocze.jpg" alt="Green Velo Roztocze">
-                    <a href="img/Green-Velo-Roztocze.jpg" class="img-fluid photo-portfolio"
+                    <img src="images/min/Green-Velo-Roztocze.jpg" alt="Green Velo Roztocze">
+                    <a href="images/Green-Velo-Roztocze.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
                        title="Green Velo Roztocze"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Litvorove-Pleso.jpg" alt="Litvorove Pleso">
-                    <a href="img/Litvorove-Pleso.jpg" class="img-fluid photo-portfolio" title="Litvorove Pleso"></a>
+                    <img src="images/min/Litvorove-Pleso.jpg" alt="Litvorove Pleso">
+                    <a href="images/Litvorove-Pleso.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Litvorove Pleso"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Murcja.jpg" alt="Murcja">
-                    <a href="img/Murcja.jpg" class="img-fluid photo-portfolio" title="Murcja"></a>
+                    <img src="images/min/Murcja.jpg" alt="Murcja">
+                    <a href="images/Murcja.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Murcja"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Raclawki-Valley.jpg" alt="Raclawki Valley">
-                    <a href="img/Raclawki-Valley.jpg" class="img-fluid photo-portfolio" title="Raclawki Valley"></a>
+                    <img src="images/min/Raclawki-Valley.jpg" alt="Raclawki Valley">
+                    <a href="images/Raclawki-Valley.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Raclawki Valley"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Sierra-Helada.jpg" alt="Sierra Helada">
-                    <a href="img/Sierra-Helada.jpg" class="img-fluid photo-portfolio" title="Sierra Helada"></a>
+                    <img src="images/min/Sierra-Helada.jpg" alt="Sierra Helada">
+                    <a href="images/Sierra-Helada.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Sierra Helada"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Via-Sirri.jpg" alt="Via Sirri">
-                    <a href="img/Via-Sirri.jpg" class="img-fluid photo-portfolio" title="Via Sirri"></a>
+                    <img src="images/min/Via-Sirri.jpg" alt="Via Sirri">
+                    <a href="images/Via-Sirri.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Via Sirri"></a>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3">
                 <div class="ratio ratio-16x9">
-                    <img src="img/min/Zywiec-Lake.jpg" alt="Zywiec Lake">
-                    <a href="img/Zywiec-Lake.jpg" class="img-fluid photo-portfolio" title="Zywiec Lake"></a>
+                    <img src="images/min/Zywiec-Lake.jpg" alt="Zywiec Lake">
+                    <a href="images/Zywiec-Lake.jpg" data-lightbox="mygallery" class="img-fluid photo-portfolio"
+                       title="Zywiec Lake"></a>
                 </div>
             </div>
         </div>
